@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   --bg-card: #1f2937;
@@ -16,9 +15,9 @@
   --clr-grey: #d5d4d8;
   --clr-main: #ffffff;
 
-  --ff-title: "Karla", sans-serif;
   --ff-btn: "Inter", sans-serif;
-  --ff-deft: "Savate", sans-serif;
+  --ff-deft: "Inter", sans-serif;
+  --ff-title: "Karla", sans-serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -41,4 +40,113 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  background-color: var(--bg-main);
+}
+
+.card {
+  margin: calc(calc(100vh - 550px) / 2) auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 550px;
+  height: 550px;
+  text-align: start;
+
+  background: var(--bg-card);
+}
+
+.card h1 {
+  font-family: var(--ff-title);
+
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  margin-top: 20%;
+  margin-right: 20%;
+
+  color: var(--clr-main);
+}
+
+.card p {
+  margin-top: 3%;
+  margin-right: 16%;
+  font-family: var(--ff-deft);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+
+  color: var(--clr-grey);
+}
+
+.card button {
+  margin-top: 10%;
+  margin-right: 46%;
+  margin-bottom: 5%;
+
+  width: 191px;
+  height: 42px;
+
+  background: #10b981;
+  color: var(--clr-main);
+  font-family: var(--ff-deft);
+
+  border-radius: 6px;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  border: none;
+}
+
+.hightlight {
+  color: var(--clr-green);
+}
+
+.password-entries {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.password-entries p {
+  margin-top: 2%;
+}
+
+.password-background {
+  width: 211px;
+  height: 39px;
+
+  background-color: var(--btn-bg-darkish);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.password-entries::after {
+  position: absolute;
+  top: -50px;
+  left: calc(calc(550px - 446px) / 2);
+  content: "";
+  /* Line 17 */
+
+  width: 446px;
+  height: 0px;
+
+  border: 1px solid var(--border-section);
+}
+
+.password-entries {
+  position: relative;
+  margin-top: 10%;
+}
+
+.password-entries p {
+  font-family: var(--ff-btn);
+  color: var(--clr-green);
 }
