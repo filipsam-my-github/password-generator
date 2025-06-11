@@ -1,0 +1,30 @@
+:root {
+  --bg-card: #1f2937;
+  --bg-main: #1c1c1c;
+
+  --border-section: #2f3e53;
+
+  --btn-bg-darkish: #273549;
+  --btn-bg-green: #10b981;
+  --btn-clr-green: #55f991;
+
+  --clr-green: #4adf86;
+  --clr-grey: #d5d4d8;
+  --clr-main: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-card: #ecfdf5;
+
+    --border-section: #d5d4d8;
+
+    --btn-bg-darkish: #273549;
+    --btn-bg-green: #10b981;
+    --btn-clr-green: #10b981;
+
+    --clr-green: #10b981;
+    --clr-grey: #6b7280;
+    --clr-main: #2b283a;
+  }
+}
