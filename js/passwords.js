@@ -18,7 +18,7 @@ export function generatePassword(
     symbols,
     length_of_password
   );
-  let generating_password;
+  let generating_password = "";
   let avalableSymbols = [];
 
   if (upercase_letters) {
