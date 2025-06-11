@@ -6,7 +6,6 @@
     <title>Password generator</title>
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/utility.css" rel="stylesheet" />
-    <script type="module" src="js/index.js"></script>
   </head>
   <body>
     <main>
@@ -15,13 +14,13 @@
           Generate a <span class="hightlight"><br />random password</span>
         </h1>
         <p>Never use an insecure password again</p>
-        <button>Generate passwords</button>
+        <button id="generate-password-btn-el">Generate passwords</button>
         <div class="password-entries">
           <div class="password-background">
             <p id="first_password"></p>
           </div>
           <div class="password-background">
-            <p id="first_password"></p>
+            <p id="secound_password"></p>
           </div>
         </div>
         <div class="settings">
@@ -36,5 +35,6 @@
         </div>
       </section>
     </main>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
