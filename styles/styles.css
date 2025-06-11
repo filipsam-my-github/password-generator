@@ -149,6 +149,7 @@ body {
 .password-entries p {
   font-family: var(--ff-btn);
   color: var(--clr-green);
+  user-select: all;
 }
 
 .settings {
