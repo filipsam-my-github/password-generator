@@ -150,3 +150,15 @@ body {
   font-family: var(--ff-btn);
   color: var(--clr-green);
 }
+
+.settings {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.settings label {
+  color: var(--clr-main);
+  font-family: var(--ff-deft);
+}
