@@ -6,7 +6,7 @@
     <title>Password generator</title>
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/utility.css" rel="stylesheet" />
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
   </head>
   <body>
     <main>
@@ -23,6 +23,16 @@
           <div class="password-background">
             <p id="first_password"></p>
           </div>
+        </div>
+        <div class="settings">
+          <label> <input type="checkbox" id="symbols" /> Symbols </label>
+          <label>
+            <input type="checkbox" id="lowercase" /> Lowercase letters
+          </label>
+          <label>
+            <input type="checkbox" id="uppercase" /> Uppercase letters
+          </label>
+          <label> <input type="checkbox" id="numbers" /> Numbers </label>
         </div>
       </section>
     </main>
