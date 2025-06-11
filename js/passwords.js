@@ -11,6 +11,13 @@ export function generatePassword(
   symbols,
   length_of_password
 ) {
+  console.log(
+    upercase_letters,
+    lowercase_letters,
+    numbers,
+    symbols,
+    length_of_password
+  );
   let generating_password;
   let avalableSymbols = [];
 
@@ -29,13 +36,13 @@ export function generatePassword(
 
   if (avalableSymbols.length === 0) {
     throw new Error(
-      `there was nothing selected password cannot be created from following symbols {exception rule avalableSymbols.length === 0} {avalableSymbols.length:${avalableSymbols.length},avalableSymbols:${avalableSymbols}}`
+      `there was nothing selected password cannot be created from following symbols {exception rule avalableSymbols.length === 0} {avalableSymbols.length:${avalableSymbols.length},avalableSymbols:${avalableSymbols}, args:(${upercase_letters},${lowercase_letters}, ${numbers}, ${symbols}, ${length_of_password})}`
     );
   }
 
   if (length_of_password <= 0) {
     throw new Error(
-      `lenght of password prevents creating one {exception rule length_of_password <= 0} {length_of_password:${length_of_password}}`
+      `lenght of password prevents creating one {exception rule length_of_password <= 0} {length_of_password:${length_of_password}, args:(${upercase_letters},${lowercase_letters}, ${numbers}, ${symbols}, ${length_of_password})`
     );
   }
 
