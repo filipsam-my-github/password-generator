@@ -24,6 +24,12 @@ generatePasswordBtn.addEventListener("click", function () {
       checkboxes["symbols"].checked,
       10
     ),
-    passwords.generatePassword(),
+    passwords.generatePassword(
+      checkboxes["uppercase"].checked,
+      checkboxes["lowercase"].checked,
+      checkboxes["numbers"].checked,
+      checkboxes["symbols"].checked,
+      10
+    ),
   ]);
 });
